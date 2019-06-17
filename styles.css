@@ -4,21 +4,25 @@
 	background: #fff;
 }
 
+.block_frontpageinfo .container {
+	max-width: 100%;
+}
+
 .block_frontpageinfo div#openingTimesPanel h3{
     padding-left: 0px;
 }
 
-.block_frontpageinfo div#openingTimesPanel p{ 
+.block_frontpageinfo div#openingTimesPanel p{
     margin: 0 0 20px 0 !important;
 }
 
 
-.block_frontpageinfo h6{ 
+.block_frontpageinfo h6{
     font-weight: 700;
 	padding-top: 10px;
 }
 
-.block_frontpageinfo div#openingTimesPanel span{ 
+.block_frontpageinfo div#openingTimesPanel span{
     font-weight: bold;
 }
 
@@ -27,7 +31,7 @@
 }
 
 .succeed-list {
-	list-style: none;
+	padding-left: 30px;
 }
 
 .succeed-list li{
@@ -35,7 +39,20 @@
 }
 
 #succeed-container{
-	padding-left: 30px;	
+	padding-left: 30px;
 }
 
+.frontpage-block-left {
+	border-right: 1px solid #eee;
+	padding-right: 30px !important;
+}
 
+.frontpage-block-center {
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+}
+
+.frontpage-block-right {
+	border-left: 1px solid #eee;
+	padding-left: 30px !important;
+}
