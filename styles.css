@@ -1,0 +1,41 @@
+.block_frontpageinfo .opening-times-panel {
+	padding: 0 0 10px;
+	margin-bottom: 20px;
+	background: #fff;
+}
+
+.block_frontpageinfo div#openingTimesPanel h3{
+    padding-left: 0px;
+}
+
+.block_frontpageinfo div#openingTimesPanel p{ 
+    margin: 0 0 20px 0 !important;
+}
+
+
+.block_frontpageinfo h6{ 
+    font-weight: 700;
+	padding-top: 10px;
+}
+
+.block_frontpageinfo div#openingTimesPanel span{ 
+    font-weight: bold;
+}
+
+.frontpage-heading{
+	padding-bottom: 20px;
+}
+
+.succeed-list {
+	list-style: none;
+}
+
+.succeed-list li{
+	padding: 5px 0 5px 0;
+}
+
+#succeed-container{
+	padding-left: 30px;	
+}
+
+
