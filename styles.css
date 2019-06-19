@@ -9,52 +9,51 @@
 }
 
 .block_frontpageinfo div#openingTimesPanel h3{
-    padding-left: 0px;
+  padding-left: 0px;
 }
 
 .block_frontpageinfo div#openingTimesPanel p{
-    margin: 0 0 20px 0 !important;
+  margin: 0 0 20px 0 !important;
 }
 
-
 .block_frontpageinfo h6{
-    font-weight: 700;
+  font-weight: 700;
 	padding-top: 10px;
 }
 
 .block_frontpageinfo div#openingTimesPanel span{
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .frontpage-heading{
 	padding-bottom: 20px;
 }
 
-.succeed-list {
-	padding-left: 30px;
-}
+/* .succeed-list { */
+	/* padding-left: 30px; */
+/* } */
 
 .succeed-list li{
 	padding: 5px 0 5px 0;
 }
 
-#succeed-container{
-	padding-left: 30px;
-}
+/* #succeed-container{ */
+	/* padding-left: 30px; */
+/* } */
 
 .frontpage-block-left {
 	border-right: 1px solid #eee;
-	padding-right: 30px !important;
+	padding-right: 35px !important;
 }
 
 .frontpage-block-center {
-	padding-left: 30px !important;
-	padding-right: 30px !important;
+	padding-left: 35px !important;
+	padding-right: 35px !important;
 }
 
 .frontpage-block-right {
 	border-left: 1px solid #eee;
-	padding-left: 30px !important;
+	padding-left: 40px !important;
 }
 
 .spinner {
@@ -77,8 +76,12 @@
   text-align: left !important;
 }
 
-.block_frontpageinfo th, .block_frontpageinfo td, .block_frontpageinfo a, .block_frontpageinfo p{
+.block_frontpageinfo th, .block_frontpageinfo td{
   padding: 5px !important;
+}
+
+.block_frontpageinfo p{
+  padding: 5px 0 !important;
 }
 
 .block_frontpageinfo tr{
@@ -94,5 +97,10 @@
 }
 
 .block_frontpageinfo td:nth-child(1), .block_frontpageinfo th:nth-child(1) {
-		display: flex;
+	display: flex;
+}
+
+#computer_availability{
+	padding-top: 10px;
+	font-size: 14px;
 }
