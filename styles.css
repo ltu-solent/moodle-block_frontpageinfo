@@ -30,29 +30,29 @@
 	padding-bottom: 20px;
 }
 
-.succeed-list {
+/* .succeed-list {
 	padding-left: 30px;
-}
+} */
 
 .succeed-list li{
 	padding: 5px 0 5px 0;
 }
 
-#succeed-container{
+/* #succeed-container{
 	padding-left: 30px;
-}
+} */
 
 .frontpage-block-left {
 	border-right: 1px solid #eee;
-	padding-right: 30px !important;
+	padding-right: 40px !important;
 }
 
 .frontpage-block-center {
-	padding-left: 30px !important;
-	padding-right: 30px !important;
+	padding-left: 40px !important;
+	padding-right: 40px !important;
 }
 
 .frontpage-block-right {
 	border-left: 1px solid #eee;
-	padding-left: 30px !important;
+	padding-left: 40px !important;
 }

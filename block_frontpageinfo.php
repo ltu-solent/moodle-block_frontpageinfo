@@ -10,14 +10,14 @@ class block_frontpageinfo extends block_base {
 		}
 
 		$helpdesk = '<h5 class=frontpage-heading>Learning Technologies Helpdesk</h5>
-		<p>Find us on Floor 2 of the Library</p>
-		<a class="twitter-timeline" data-height="600" data-link-color="#E81C4F" href="https://twitter.com/SolentLThelp?ref_src=twsrc%5Etfw"></a>
+		<p>Visit us on Floor 2 of the Library</p>
+		<a class="twitter-timeline" data-height="680" data-link-color="#E81C4F" href="https://twitter.com/SolentLThelp?ref_src=twsrc%5Etfw"></a>
 		<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
 
 		$succeed = '<h5 class=frontpage-heading>Succeed@Solent</h5>
 					<div id="succeed-container">
 					<a href="https://learn.solent.ac.uk/course/view.php?id=90">Succeed Home Page</a>
-					<br>
+					<br><br>
 					<h5>The Assignment Process:</h6>
 					<ul class="succeed-list">
 						<li><a href="https://learn.solent.ac.uk/course/view.php?id=31627">Starting Assignments</a></li>
@@ -53,9 +53,10 @@ class block_frontpageinfo extends block_base {
 		$librarytimes = str_replace('href="/library/essential-info/opening-hours/opening-hours.aspx">','href="http://portal.solent.ac.uk/library/essential-info/opening-hours/opening-hours.aspx" target="_blank">', $librarytimes);
 		$librarytimes = str_replace('href="/library/services-for/warsash-students/opening-hours.aspx">','href="http://portal.solent.ac.uk/library/services-for/warsash-students/opening-hours.aspx" target="_blank">', $librarytimes);
 
-		$pcbooking = '<iframe width="100%" height="450px" src="https://mypc.solent.ac.uk/MyPC/Front.aspx?page=avMonitor&amp;language=en-GB&amp;refresh=30&amp;sid=3&amp;size=s&amp;limit=100&amp;cp=1&amp;tp=1" frameborder="0"></iframe>
-		<div><a href="https://mypc.solent.ac.uk/cire/login.aspx" target="_blank">Make a booking</a></div>
-		<div><a href="https://learn.solent.ac.uk/course/view.php?id=27658" target="_blank">myPC help and information</a></div><br>';
+		$pcbooking = '<div><a href="https://mypc.solent.ac.uk/cire/login.aspx" target="_blank">Make a booking</a></div>
+		<div><a href="https://learn.solent.ac.uk/course/view.php?id=27658" target="_blank">myPC help and information</a></div><br>
+		<iframe width="100%" height="450px" src="https://mypc.solent.ac.uk/MyPC/Front.aspx?page=avMonitor&amp;language=en-GB&amp;refresh=30&amp;sid=3&amp;size=s&amp;limit=100&amp;cp=1&amp;tp=1" frameborder="0"></iframe>
+		';
 
 
 		$table = '	<div class="container">
@@ -65,7 +66,10 @@ class block_frontpageinfo extends block_base {
 							</div>
 							<div class="col-sm frontpage-block-center">
 								<h5 class=frontpage-heading>Library</h5>' .
-								$librarytimes . '<hr>' . $pcbooking .'
+								$librarytimes . '
+								<hr>
+								<h5 class=frontpage-heading>MyPC</h5>' . 
+								$pcbooking .'
 							</div>
 							<div class="col-sm frontpage-block-right">' .
 								$succeed .'
