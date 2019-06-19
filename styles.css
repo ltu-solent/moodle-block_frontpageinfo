@@ -56,3 +56,43 @@
 	border-left: 1px solid #eee;
 	padding-left: 30px !important;
 }
+
+.spinner {
+  font-size: 50px !important;
+  margin-left: 45%;
+  margin-top: 40%;
+}
+
+@media (max-width: 575px) {
+	.spinner {
+	  margin-top: 0 !important;
+	}
+}
+
+.block_frontpageinfo table {
+	width: 100%;
+}
+
+.block_frontpageinfo th{
+  text-align: left !important;
+}
+
+.block_frontpageinfo th, .block_frontpageinfo td, .block_frontpageinfo a, .block_frontpageinfo p{
+  padding: 5px !important;
+}
+
+.block_frontpageinfo tr{
+  border-bottom: 1px solid #eee;
+}
+
+.block_frontpageinfo td.pc_availability, .block_frontpageinfo th.pc_availability{
+  text-align: right !important;
+}
+
+#refresh_info {
+	margin-top: 10px;
+}
+
+.block_frontpageinfo td:nth-child(1), .block_frontpageinfo th:nth-child(1) {
+		display: flex;
+}
