@@ -34,5 +34,5 @@ function create_computers_table () {
 }
 
 if (isset($_POST['callTableFunc'])) {
-  create_computers_table();
+  echo create_computers_table();
 }
