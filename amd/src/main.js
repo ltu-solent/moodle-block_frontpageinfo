@@ -6,9 +6,11 @@ if (container) {
 
   setInterval(function () {
 
-    var content = container.innerHTML;
     container.innerHTML= '';
-    $("#computer_availability").addClass("spinner fa fa-circle-o-notch fa-spin");
+
+    if (container.innerHTML= '') {
+      $("#computer_availability").addClass("spinner fa fa-circle-o-notch fa-spin");
+    }
 
     setTimeout(function () {
       $.ajax({
