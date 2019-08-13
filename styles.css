@@ -96,10 +96,6 @@
 	margin-top: 10px;
 }
 
-.block_frontpageinfo td:nth-child(1), .block_frontpageinfo th:nth-child(1) {
-	display: flex;
-}
-
 #computer_availability{
 	padding-top: 10px;
 	font-size: 14px;
