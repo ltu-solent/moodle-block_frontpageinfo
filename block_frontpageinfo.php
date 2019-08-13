@@ -86,12 +86,13 @@ class block_frontpageinfo extends block_base {
   		$pcbooking = '<a href="https://mypc.solent.ac.uk/cire/login.aspx">Make a booking</a>
                     <br>
                     <a href="https://learn.solent.ac.uk/course/view.php?id=27658">myPC help and information</a>';
+      $pcbooking .= '<div class="refresh"></div>';
       $pcbooking .= '<div id="computer_availability">';
       $pcbooking .= create_computers_table();
       $pcbooking .= '</div><p id="refresh_info">This table refreshes every 30 seconds</p>';
 
 
-  		$table = '	<div class="container">
+  		$table = '<div class="container">
   						<div class="row">
   							<div class="col-sm frontpage-block-left">' .
   								$helpdesk .'
