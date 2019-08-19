@@ -41,7 +41,7 @@ class block_frontpageinfo extends block_base {
 
   		$helpdesk = '<h5 class=frontpage-heading>Learning Technologies Helpdesk</h5>
   		<p>Find us on Floor 2 of the Library</p>
-  		<a class="twitter-timeline" data-height="600" data-link-color="#E81C4F" href="https://twitter.com/SolentLThelp?ref_src=twsrc%5Etfw"></a>
+  		<a class="twitter-timeline" data-height="735" data-link-color="#E81C4F" href="https://twitter.com/SolentLThelp?ref_src=twsrc%5Etfw"></a>
   		<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
 
   		$succeed = '<h5 class=frontpage-heading>Succeed@Solent</h5>

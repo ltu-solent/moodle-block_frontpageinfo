@@ -100,13 +100,3 @@
 	padding-top: 10px;
 	font-size: 14px;
 }
-
-.block_frontpageinfo iframe#twitter-widget-0 {
-	height: 87% !important;
-}
-
-@media (max-width: 575px) {
-	.block_frontpageinfo iframe#twitter-widget-0 {
-		height: 600px !important;
-	}
-}
