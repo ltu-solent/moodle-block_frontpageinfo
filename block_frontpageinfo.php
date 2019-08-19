@@ -9,35 +9,7 @@ class block_frontpageinfo extends block_base {
   		  return $this->content;
   		}
 
-      function create_computers_table () {
-
-        $url = 'https://mypc.solent.ac.uk/MyPC/Front.aspx?page=getResourceStatesAPI';
-        $computers = json_decode(file_get_contents($url, true));
-        $table = '
-        <div><table><tr>
-        <th>' . $computers[1]->name . '</th>
-        <th class="pc_availability">Availability</th></tr>';
-
-        foreach ($computers[1]->locations as $locations) {
-          $total = 0;
-          $available = 0;
-          foreach($locations->resources as $resources) {
-            $total++;
-            if ($resources->state == "AVAILABLE") {
-              $available++;
-            }
-          }
-
-          $table .=
-          '<tr>
-            <td class="pc_location">' . $locations->name . '</td>
-            <td class="pc_availability">' . $available . '/' . $total . '</td>
-          </tr>';
-        }
-        $table .= '
-        </table></div>';
-        return $table;
-      }
+$this->page->requires->js_call_amd('block_frontpageinfo/main', 'init', array());
 
   		$helpdesk = '<h5 class=frontpage-heading>Learning Technologies Helpdesk</h5>
   		<p>Find us on Floor 2 of the Library</p>
@@ -86,8 +58,8 @@ class block_frontpageinfo extends block_base {
   		$pcbooking = '<a href="https://mypc.solent.ac.uk/cire/login.aspx">Make a booking</a>
                     <br>
                     <a href="https://learn.solent.ac.uk/course/view.php?id=27658">myPC help and information</a>';
+      $pcbooking .= '<div class="refresh"></div>';
       $pcbooking .= '<div id="computer_availability">';
-      $pcbooking .= create_computers_table();
       $pcbooking .= '</div><p id="refresh_info">This table refreshes every 30 seconds</p>';
 
 
