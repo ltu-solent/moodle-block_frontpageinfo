@@ -6,6 +6,9 @@ function create_computers_table () {
 
   $url = 'https://mypc.solent.ac.uk/MyPC/Front.aspx?page=getResourceStatesAPI';
   $computers = json_decode(file_get_contents($url, true));
+  if ($computers[1] === null) { //if there is no data, return an empty string
+    return '';
+  }
   $table = '
   <div>
   <table><tr>
