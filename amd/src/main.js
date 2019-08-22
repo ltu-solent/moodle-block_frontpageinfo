@@ -35,6 +35,12 @@ define(['jquery', 'block_frontpageinfo/main'], function($) {
               data: { "callTableFunc": "1"},
               success: function(response) {
                 container.innerHTML= response;
+                if (response == '') {
+                  container.innerHTML = "Error getting availability";
+                }
+              },
+              error: function() {
+                container.innerHTML= "Error getting availability";
               },
               complete: function () {
                 $(".refresh").removeClass("spinner fa fa-circle-o-notch fa-spin");
