@@ -36,11 +36,11 @@ define(['jquery', 'block_frontpageinfo/main'], function($) {
               success: function(response) {
                 container.innerHTML= response;
                 if (response == '') {
-                  container.innerHTML = "Error getting availability";
+                  container.innerHTML = "<p>Error retrieving availability feed - Please contact ltu@solent.ac.uk for help.</p>";
                 }
               },
               error: function() {
-                container.innerHTML= "Error getting availability";
+                container.innerHTML= "<p>Error retrieving availability feed - Please contact ltu@solent.ac.uk for help.</p>";
               },
               complete: function () {
                 $(".refresh").removeClass("spinner fa fa-circle-o-notch fa-spin");
