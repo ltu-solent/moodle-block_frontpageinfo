@@ -1,3 +1,7 @@
+.block_frontpageinfo {
+    border: none !important;
+}
+
 .block_frontpageinfo .opening-times-panel {
 	padding: 0 0 10px;
 	margin-bottom: 20px;
@@ -6,6 +10,7 @@
 
 .block_frontpageinfo .container {
 	max-width: 100%;
+	padding: 0;
 }
 
 .block_frontpageinfo div#openingTimesPanel h3{
@@ -19,6 +24,7 @@
 .block_frontpageinfo h6{
   font-weight: 700;
 	padding-top: 10px;
+	border: none;
 }
 
 .block_frontpageinfo div#openingTimesPanel span{
@@ -46,14 +52,33 @@
 	padding-right: 35px !important;
 }
 
-.frontpage-block-center {
-	padding-left: 35px !important;
+.frontpage-block-left {
+	border-right: 1px solid #eee;
 	padding-right: 35px !important;
 }
 
 .frontpage-block-right {
 	border-left: 1px solid #eee;
 	padding-left: 40px !important;
+}
+
+.frontpage-block-library {
+	border: 1px solid rgba(0,0,0,.125);
+	padding: 10px;
+}
+
+.frontpage-block-pc {
+	border: 1px solid rgba(0,0,0,.125);
+	padding: 10px;
+	margin-top: 1rem;
+}
+
+.block_frontpageinfo .card-text.content.mt-3 {
+    margin: 0 !important;
+}
+
+.block_frontpageinfo .card-body.p-3 {
+    padding: 0 !important;
 }
 
 .spinner {
